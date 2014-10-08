@@ -1571,6 +1571,14 @@ out:
 	return 0;
 }
 
+SYSCALL_DEFINE3(addition, int, x, int, y, int*, rv)
+{
+	printk("<1> Addition %d + %d = %d\n", x, y, x + y);
+	int res = x + y;
+	copy_to_user(rv, &res, sizeof(int));
+	return 0;
+}
+
 /*
  * It would make sense to put struct rusage in the task_struct,
  * except that would make the task_struct be *really big*.  After
