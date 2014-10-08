@@ -341,6 +341,7 @@
 #define __NR_preadv		333
 #define __NR_pwritev		334
 #define __NR_addition		335
+#define __NR_increment		336
 
 #ifdef __KERNEL__
 

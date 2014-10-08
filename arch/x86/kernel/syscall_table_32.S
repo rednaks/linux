@@ -335,3 +335,4 @@ ENTRY(sys_call_table)
 	.long sys_preadv
 	.long sys_pwritev
 	.long sys_addition		/* 335 */
+	.long sys_increment
